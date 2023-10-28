@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+html, body {   /*The entire page*/
+    height: 100%;
+    width: 100%;
+    background-color: lightseagreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#container {
+    height: 360px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: white;
+    overflow: hidden;
+} 
+#container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+#container i {
+    color: #fff;
+    font-size: 64px;
+    position: absolute; /*i is now around in the middle of img*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0); /*positions the i in the center of img and scale 0 rkho filhal*/
+    opacity: 0;
+    transition: all ease 0.5s;
+}
